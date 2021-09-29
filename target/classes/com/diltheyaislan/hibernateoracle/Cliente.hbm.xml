@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 29 de set. de 2021 18:52:43 by Hibernate Tools 5.5.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.diltheyaislan.hibernateoracle.Cliente" optimistic-lock="none" polymorphism="implicit" select-before-update="false" table="CLIENTE">
+        <id name="cpf" type="string">
+            <column length="11" name="CPF"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="nome" optimistic-lock="true" type="string" unique="false">
+            <column length="80" name="NOME" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="COLUMN2"/>
+        </property>
+    </class>
+</hibernate-mapping>
